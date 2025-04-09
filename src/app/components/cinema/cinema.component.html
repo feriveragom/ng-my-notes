@@ -1,0 +1,21 @@
+<section class="cinema">
+    <ul class="movie-list">
+        @if (movies.length === 0) {
+        <li class="movie-item">No movies available</li>
+        } @else if (movies.length > 0) {
+        @for (movie of movies; track $index) {
+        <li class="movie-item">
+            <article>
+                <h2>Movie Name: {{ movie.name }}</h2>
+                <p>Movie Duration: {{ movie.duration }} minutes</p>
+                @if (movie.director) {
+                    <p>Movie Director: {{ movie.director }}</p>
+                }
+            </article>
+            <button (click)="eliminar(movie.name)">Eliminar</button>
+        </li>
+        }
+        }
+
+    </ul>
+</section>

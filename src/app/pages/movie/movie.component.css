@@ -1,0 +1,30 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+fieldset {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+label {
+    width: 120px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+input {
+    width: 200px;
+}
+
+.form-error {
+    font-size: 0.8rem;
+    color: red;
+}
